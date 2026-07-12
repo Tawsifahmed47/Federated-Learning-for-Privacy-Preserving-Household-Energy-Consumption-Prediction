@@ -1,0 +1,56 @@
+project:
+  name: "Federated Learning Simulator for Privacy-Preserving Energy Consumption Prediction"
+  seed: 42
+
+paths:
+  data_root: "data set/Output"
+  results_root: "results"
+  logs_dir: "results/logs"
+  plots_dir: "results/plots"
+  models_dir: "results/models"
+  metrics_dir: "results/metrics"
+
+data:
+  target_column: "energy_kwh"
+  batch_size: 256
+  num_workers: 0
+  drop_columns: ["lclid", "timestamp", "source_file", "cloudcover", "precipintensity"]
+  use_categorical: false
+  max_categorical_levels: 50
+
+training:
+  mode: "federated" # federated | centralized | both
+  algorithm: "fedavg" # fedavg | fedprox | scaffold
+  num_rounds: 20
+  num_clients: null # null uses all clients
+  client_fraction: 0.2
+  local_epochs: 2
+  learning_rate: 0.001
+  centralized_epochs: 20
+  fedprox_mu: 0.01
+  malicious_client_ids: []
+  malicious_probability: 0.0
+  partitioning:
+    mode: "all" # all | iid | noniid
+    selected_groups: null # e.g. ["adversity"] for noniid; null means all groups
+    max_clients: null # optional cap after partition filtering
+
+evaluation:
+  evaluate_each_round: true
+  track_energy_consumption: true
+
+anomaly:
+  enabled: true
+  method: "zscore" # zscore | iqr | model_based
+  threshold: 3.0 # for zscore, or contamination for model_based
+  action: "log" # log | filter (filter will remove anomalies from training)
+  robustness_test:
+    enabled: true
+    noise_level: 0.5 # factor of standard deviation to add as noise
+    sample_fraction: 0.1 # fraction of data to inject noise into
+
+bonus:
+  enable_dp: false
+  dp_noise_std: 0.001
+  estimate_communication_cost: true
+

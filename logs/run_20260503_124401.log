@@ -1,0 +1,26 @@
+2026-05-03 12:44:01,946 | INFO | Using device: cpu
+2026-05-03 12:44:35,414 | INFO | [FL:fedavg] Round 1/20 | loss=0.009373 mae=0.090544 energy_total=23025.25 anomalies=3041 robustness_recall=0.06 | selected_clients=10
+2026-05-03 12:44:53,174 | INFO | [FL:fedavg] Round 2/20 | loss=0.023468 mae=0.094086 energy_total=23025.25 anomalies=3041 robustness_recall=0.09 | selected_clients=10
+2026-05-03 12:45:14,701 | INFO | [FL:fedavg] Round 3/20 | loss=0.016510 mae=0.078010 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:45:38,455 | INFO | [FL:fedavg] Round 4/20 | loss=0.019001 mae=0.078050 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:46:00,794 | INFO | [FL:fedavg] Round 5/20 | loss=0.032552 mae=0.072849 energy_total=23025.25 anomalies=3041 robustness_recall=0.09 | selected_clients=10
+2026-05-03 12:46:24,118 | INFO | [FL:fedavg] Round 6/20 | loss=0.007226 mae=0.070631 energy_total=23025.25 anomalies=3041 robustness_recall=0.07 | selected_clients=10
+2026-05-03 12:46:46,229 | INFO | [FL:fedavg] Round 7/20 | loss=0.020686 mae=0.072223 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:47:09,281 | INFO | [FL:fedavg] Round 8/20 | loss=0.025067 mae=0.069677 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:47:32,377 | INFO | [FL:fedavg] Round 9/20 | loss=0.011678 mae=0.070900 energy_total=23025.25 anomalies=3041 robustness_recall=0.07 | selected_clients=10
+2026-05-03 12:47:54,448 | INFO | [FL:fedavg] Round 10/20 | loss=0.007126 mae=0.069976 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:48:16,824 | INFO | [FL:fedavg] Round 11/20 | loss=0.019942 mae=0.072424 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:48:38,890 | INFO | [FL:fedavg] Round 12/20 | loss=0.016942 mae=0.071597 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:49:01,755 | INFO | [FL:fedavg] Round 13/20 | loss=0.010461 mae=0.072767 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:49:24,680 | INFO | [FL:fedavg] Round 14/20 | loss=0.010743 mae=0.070925 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:49:48,347 | INFO | [FL:fedavg] Round 15/20 | loss=0.009932 mae=0.071426 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:50:11,139 | INFO | [FL:fedavg] Round 16/20 | loss=0.012937 mae=0.070846 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:50:33,972 | INFO | [FL:fedavg] Round 17/20 | loss=0.017252 mae=0.071042 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:50:51,809 | INFO | [FL:fedavg] Round 18/20 | loss=0.013671 mae=0.073427 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:51:04,364 | INFO | [FL:fedavg] Round 19/20 | loss=0.011731 mae=0.073659 energy_total=23025.25 anomalies=3041 robustness_recall=0.06 | selected_clients=10
+2026-05-03 12:51:16,669 | INFO | [FL:fedavg] Round 20/20 | loss=0.011981 mae=0.073114 energy_total=23025.25 anomalies=3041 robustness_recall=0.08 | selected_clients=10
+2026-05-03 12:51:36,781 | INFO | Generating individual prediction plots for 50 clients...
+2026-05-03 12:52:27,942 | INFO | Saved FL per-round metrics CSV: results\metrics\fl_fedavg_round_metrics_20260503_124401.csv
+2026-05-03 12:52:28,272 | INFO | Estimated communication cost (bytes): 4916800.00
+2026-05-03 12:52:28,272 | INFO | Run completed.
+2026-05-03 12:52:28,273 | INFO | FL-fedavg: {'mae': 0.0731138214468956, 'rmse': 0.15879676842378618, 'mse': 0.025216413661837578, 'r2': 0.6234490444658201, 'total_energy_kwh': 23025.248046875, 'avg_energy_kwh': 0.17268720269203186, 'detection_recall': 0.07706932309953617, 'detection_precision': 0.5176794368303448}
